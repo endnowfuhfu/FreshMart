@@ -1,0 +1,125 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+
+  <title>Edit Product</title>
+  <link rel="stylesheet" href="edit-product-style.css">
+
+</head>
+
+<body>
+
+  <div class="header">
+    <img id="company-logo" src="images/logo.png">
+    <div id="company-name">FRESHMART</div>
+  </div>
+
+
+  <div class="topnav">
+    <a href="inventory.html" class="active"><img class="icon" src="images/inventory.png" alt="inventory icon">Inventory</a>
+    <a href="orders.html"><img class="icon" src="images/orders.png" alt="order icon">Orders</a>
+    <a href="customers.html"><img class="icon" src="images/customer.png" alt="customer icon">Customers</a>
+  </div>
+
+
+  <div class="center-box">
+    <div class="edit-delete">
+      <button class="header-button" onclick="inventory.html"> Edit Product</button>
+    </div>
+
+    <div class="description">
+      <p class=box-header><b>Product Name</b></p>
+      <input type="text" class="title-box">
+      <p class="box-header"><b>Description</b></p>
+      <textarea cols="40" rows="5" id=description-box></textarea>
+
+    </div>
+
+    <div class="description">
+      <p class=box-header><b>Product Image</b></p>
+      <hr>
+
+      <div id="product-image">
+        <p>Image Preview</p>
+      </div>
+
+      <form action="/action_page.php">
+        <input type="file" id="myFile" name="filename">
+        <input type="submit">
+      </form>
+
+    </div>
+
+    <div class="description">
+      <p class=box-header><b>Pricing</b></p>
+      <hr>
+      <p class="box-header"> Item Price</p>
+
+
+      <table class="pricing">
+        <tr>
+          <td><input type="text" class="title-box-small"></td>
+          <td>CAD</td>
+        </tr>
+      </table>
+
+      <table class="pricing">
+        <tr>
+          <td>
+            <p class="box-header"> Unit Measurement</p>
+          </td>
+        </tr>
+        <tr>
+          <td><input type="text" class="title-box-small" placeholder="Amount"></td>
+          <td><input type="text" class="title-box-small" placeholder="Measurement"></td>
+          <td>(unit/kg/lb)</td>
+        </tr>
+
+      </table>
+
+      <p class=box-header>Additional Pricing Info</p>
+      <input type="text" class="title-box">
+
+    </div>
+
+    <div class="description">
+      <p class=box-header><b>Inventory</b></p>
+      <hr>
+
+      <p class=box-header>Isle</p>
+
+      <select name="isles" id="isles">
+        <option value="select" selected>Select isle</option>
+        <option value="beverages">Beverages</option>
+        <option value="dairy">Dairy & Eggs</option>
+        <option value="snacks">Snacks</option>
+        <option value="fruits">Fruits & Vegetables</option>
+        <option value="bakery">Bakery</option>
+
+      </select>
+      <p class=box-header>Serial Number (P- ######)</p>
+      <td><input type="text" class="title-box-small" placeholder="######"></td>
+
+
+      <p class=box-header>Quantity in Stock</p>
+      <input type="text" class="title-box-small">
+
+    </div>
+
+    <div class="clearfix">
+      <button class="submit">Save</button>
+    </div>
+
+  </div>
+
+
+
+
+</body>
+
+
+</html>
