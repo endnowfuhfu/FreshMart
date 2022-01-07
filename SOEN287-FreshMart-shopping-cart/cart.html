@@ -1,0 +1,213 @@
+<head>
+	<title>Shopping Cart</title>
+	<link rel="icon" type="image/png" href="favicon-16x16.png" size="16x16">
+	<link rel = "stylesheet" type = "text/css" href = "styles.css"/>
+</head>
+
+	<body>
+	<!-- Webpage Header part -->
+<img id = "company-logo" src="logo.png">
+
+<div id="company-name">FRESHMART
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Aisles
+		</button>
+		<!-- You should change the active part and the href link -->
+		<div class="dropdown-content">
+			<a href="fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="#">Meat and Seafood</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="#">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<a href="#" style="float:right;">Log In</a>
+	<a href="#" style="float:right;">Sign up</a>
+	<a class="cartlogo active" href="#" style="float: right;">
+		<img src="cart.png">
+	</a>
+</div>
+
+<div class="titlecart">
+<h1>Shopping Cart</h1>
+</div>
+<div class="buttonscart">
+<button class ="buttoncart">Select/Deselect all items</button>
+</div>
+<div class="pagecontentcart">
+		<table class ="cartcontent">
+				<tr>
+					<th width="200 px">Product</th>
+					<th width="400 px">Quantity</th>
+					<th width="200 px">Price</th>
+				</tr>
+				<tr>
+				<th>
+					<div class = "itemGridCart">
+						<div class="centerimagecart"id="singleProductImageCart">
+						<img src="cola.jpg" alt="item1">
+					</div>
+							<p style="padding:15px">Cola 335mL</p>
+					</div>
+						</th>
+						<th class="centerTextcart">
+							<input class="cartqnt" type="number" value=1 id="itemNumberCart" name="colaquantity"size="100"onchange="theprice()">
+							<p><button>Delete</button></p>
+						</th>
+						<th class="centerTextcart">
+							<p>1.99$</p>
+						</th>
+					</tr>
+				<tr>
+							<th>
+					<div class = "itemGridCart">
+						<div class="centerimagecart"id="singleProductImageCart">
+						<img src="beer.png" alt="item2">
+					</div>
+							<p style="padding:15px">Big Beer 500mL</p>
+					</div>
+						</th>
+						<th class="centerTextcart">
+							<input class="cartqnt" type="number" value=1 id="itemNumberCart" name="beerquantity"size="100"onchange="theprice()">
+							<p><button>Delete</button></p>
+						</th>
+						<th class="centerTextcart">
+							<p>3.99$</p>
+						</th>
+								</tr>
+				<tr>
+										<th>
+					<div class = "itemGridCart">
+						<div class="centerimagecart"id="singleProductImageCart">
+						<img src="water.png" alt="item3">
+					</div>
+							<p style="padding:15px">Water 500mL</p>
+					</div>
+						</th>
+						<th class="centerTextcart">
+							<input class="cartqnt" type="number" value=1 id="itemNumberCart" name="waterquantity"size="100"onchange="theprice()">
+							<p><button>Delete</button></p>
+						</th>
+						<th class="centerTextcart">
+							<p>0.99$</p>
+						</th>
+											</tr>
+		</table>
+<br>
+<br>
+
+<div id="moneycart">
+	<table class = "cartcontent" width="350">
+
+	<tr>
+			<th width="200"><h2>Order Summary</h2></th>
+			<th width="150" id="itemnb"><h2>(3 items)</h2></th>
+	</tr>
+	<tr>
+		<th>_____________________</th>
+		<th>________</th>
+	</tr>
+	<tr>
+			<th width="100">Subtotal:</th>
+			<th width="200"id="total">6.97$</th>
+			<th height="30"></th>
+	</tr>
+	
+	<tr>
+			<th width="100">QST:</th>
+			<th width="200" id="qst">0.67$</th>
+			<th height="30"></th>
+	</tr>
+	<tr>
+			<th width="100">GST:</th>
+			<th width="200" id="gst">0.34$</th>
+	</tr>
+	<tr>
+		<th>_____________________</th>
+		<th>________</th>
+	</tr>
+	<tr>
+			<th>Total:</th>
+			<th id="tax">7.99$</th>
+			<th height="30"></th>
+	</tr>
+	</table>
+</div>
+</div>
+<div class="buttonscart">
+<a href="homepage.html">Continue Shopping</a>
+</div>
+
+
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="#"><li>Meat and Seafood</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Account Information</li></a>
+				<a href="#"><li>Shopping cart</li></a>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="copyright">Copyright © 2021 Freshmart</div>
+<!--End of footer part-->
+
+
+<script>
+	function theprice() {
+	
+	var cola= parseInt(document.getElementsByName("colaquantity")[0].value);
+	var beer= parseInt(document.getElementsByName("beerquantity")[0].value);
+	var water= parseInt(document.getElementsByName("waterquantity")[0].value);
+	var itemcount=cola+beer+water;
+	document.getElementById("itemnb").innerHTML = "<h2>("+itemcount+" items)</h2>";
+	
+	var total=1.99*cola+3.99*beer+0.99*water;
+	var qst=total*0.0975;
+	var gst=total*0.05;
+	var tax=total+qst+gst;
+	
+	total=Math.floor(total* 100) / 100;
+	qst=Math.floor(qst* 100) / 100;
+	gst=Math.floor(gst* 100) / 100;
+	tax=Math.floor(tax* 100) / 100;
+	
+	document.getElementById("total").innerHTML = total+"$";
+	document.getElementById("qst").innerHTML = qst+"$";
+	document.getElementById("gst").innerHTML = gst+"$";
+	document.getElementById("tax").innerHTML = tax+"$";
+	}
+
+</script>
+
+
+																	</body>
