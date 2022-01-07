@@ -1,0 +1,70 @@
+	<!--
+	Places to modify will be marked with a *
+	-->
+
+	<!DOCTYPE HTML>
+
+	<html lang="en">
+
+	<head>
+	  <meta charset="utf-8" name = "author" content = "Kevin Chan 40176896">
+	  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	  <!--
+	  * Title to be modifed
+	  -->
+	  <title>Edit profile</title>
+	  <link rel="stylesheet" href="css/style_edit-profile.css">
+
+	</head>
+
+	<body>
+
+	<div class="header">
+	  <img id="company-logo" src="images/logo.png">
+	  <div id="company-name">FRESHMART</div>
+	</div>
+	 <!--
+	    Same topnav style as the front end.
+	  * Active class to be moved
+	  -->
+	 
+	<div class="topnav">
+		<a href="inventory.html"><img class="icon" src="images/inventory.png" alt="inventory icon">Inventory</a>
+		<a href="orders.html"><img class="icon" src="images/orders.png" alt="order icon">Orders</a>
+		<a href="customers.html" class="active"><img class="icon" src="images/customer.png" alt="customer icon">Customers</a>
+	</div>
+
+
+
+	<form action="/action_page.php" style="border:1px solid #ccc">
+		  <div class="container">
+		    
+			<h1 style="text-align: center;">Profile</h1>
+		    <hr>
+
+	        <label for="email"><b>Email Address</b></label>
+		    <input type="text" value = "123@gmail.com" placeholder="Edit Email" name="email" required>
+		    <hr>    
+		    <label for="psw"><b>Password</b></label>
+		    <input type="password" value = "Kevin Chan" placeholder="Edit Password" name="psw" required>
+	        <hr>   
+		    <label for="address"><b>Address</b></label>
+		    <input type="text" value = "1241 Big Rock Cove Ave." placeholder="Edit Address" name="address" required>
+		    <hr> 
+		    <label for="postal code"><b>Postal Code</b></label>
+		    <input type="text" value = "S3N 2N6" placeholder="Edit Postal Code" name="postal code" required>
+		    <hr>      
+		   
+
+		    <div class="clearfix">
+		    
+		      <button type="submit" class="savebtn">Save</button>
+		    </div>
+		  	</div>
+			</form>
+
+
+	</body>
+
+
+	</html>

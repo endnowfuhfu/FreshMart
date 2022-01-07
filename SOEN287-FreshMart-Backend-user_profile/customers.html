@@ -1,0 +1,143 @@
+<!--
+Places to modify will be marked with a *
+-->
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <!--
+  * Title to be modifed
+  -->
+  <title>Customers Admin</title>
+  <link rel="stylesheet" href="backend-style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+  <img id="company-logo" src="images/logo.png">
+  <div id="company-name">FRESHMART</div>
+</div>
+ <!--
+    Same topnav style as the front end.
+  * Active class to be moved
+  -->
+ 
+<div class="topnav">
+	<a href="inventory.html"><img class="icon" src="images/inventory.png" alt="inventory icon">Inventory</a>
+	<a href="orders.html"><img class="icon" src="images/orders.png" alt="order icon">Orders</a>
+	<a href="customers.html" class="active"><img class="icon" src="images/customer.png" alt="customer icon">Customers</a>
+</div>
+
+
+<div class="center-box">
+	<div class="edit-delete" >
+		<button class="header-button">Add New User</button>
+		<button class="header-button">Delete Selected Users</button>
+	</div>
+	
+	<table class="list">
+   <!--
+  * Change the headers accrodingly. Remove or add new columns
+  -->
+		<tr>
+			<td class="headers">User ID #</td>
+			<td class="headers">Email</td>
+			<td class="headers">Password</td>
+			<td class="headers">Address</td>
+			<td class="headers">Postal Code</td>
+			<td class="headers">Edit</td>
+			<td class="headers">Select</td>
+
+		</tr>
+ <!--
+  * Remove or add new cells. Alternate between odd and even.
+  -->
+		<tr class="odd">
+			<td class="cell">U - 000001</td>
+			<td class="cell"> rayleonard726@gmail.com </td>
+			<td class="cell"> ********* </td>
+			<td class="cell"> 305 Marion Pugh Dr </td>
+			<td class="cell"> H7N 4X6 </td>
+			<!--
+	 		 * Change the edit href direcory.
+  			-->
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">U - 000002</td>
+			<td class="cell"> 1010442661@qq.com </td>
+			<td class="cell"> ********** </td>
+			<td class="cell"> 210 Ambsary Ave </td>
+			<td class="cell"> S3N 2N6 </td>
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">U - 000003</td>
+			<td class="cell"> email address</td>
+			<td class="cell"> *********</td>
+			<td class="cell"> Address </td>
+			<td class="cell"> Postal Code </td>
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="even">
+			<td class="cell">U - 000004</td>
+			<td class="cell"> email address</td>
+			<td class="cell"> *********</td>
+			<td class="cell"> Address </td>
+			<td class="cell"> Postal Code </td>
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">U - 000005</td>
+			<td class="cell"> email address</td>
+			<td class="cell"> *********</td>
+			<td class="cell"> Address </td>
+			<td class="cell"> Postal Code </td>
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="even">
+			<td class="cell">U - 000006</td>
+			<td class="cell"> email address</td>
+			<td class="cell"> *********</td>
+			<td class="cell"> Address </td>
+			<td class="cell"> Postal Code </td>
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">U - 000007</td>
+			<td class="cell"> email address</td>
+			<td class="cell"> *********</td>
+			<td class="cell"> Address </td>
+			<td class="cell"> Postal Code </td>
+			<td class="cell"><a href="backend_edit-profile.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+
+	</table>
+	
+
+</div>
+
+</body>
+
+
+</html>
