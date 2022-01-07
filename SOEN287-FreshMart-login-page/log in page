@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Login</title>
+	
+
+			<style>
+	body {
+	  margin: 0;
+	  font-family: 'roboto-regular', 'Helvetica', "Sans-serif";
+	  height:100%;
+	}
+	
+	#company-logo{
+	position:absolute;
+	height: 80px;
+	width: 75px;
+	padding: 20px;
+	background:white;
+	}
+
+	#company-name{ font-family: 'Verdana','Times New Roman', serif;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #489FB5;
+	padding: 30px 20px 30px 140px;
+	height: 60px;
+	color:white;
+	}
+
+	@media(max-width:600px){
+	#company-name{
+		font-size:40px;
+		padding: 35px 20px 25px 140px;
+	}
+	
+	}
+
+	#copyright{
+	width:100%;
+	color:white;
+	background-color:#308090;
+	padding: 20px;
+	text-align:center;
+	}
+
+	.topnav{
+	overflow:hidden;
+	background: #303030;
+		
+	}
+
+	.topnav a
+	{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 15px 40px;
+	font-size: 16px;
+	text-decoration: none;
+	}
+	.topnav a:hover, .dropdown:hover .dropbtn {
+	background-color:#505050;
+	color: white
+	}	
+	.topnav a.cartlogo{
+	padding:0px 0px;
+	height:48px;
+	}
+	.topnav img{
+	max-height:48px;
+	}
+	.active{
+	background-color:#82C0CC !important;
+	font-weight:bold;
+	color:white !important;
+	}
+
+	.dropdown {
+  	float: left;
+  	overflow: hidden;
+	}
+	.dropdown .dropbtn {
+  	font-size: 16px;
+ 	 border: none;
+  	outline: none;
+  	color: white;
+  	background: #303030;
+ 	 padding: 15px 30px;
+ 	 font-family: inherit; 
+	}
+	.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.1);
+  	border: 10px;
+  	z-index: 10;
+	}
+	.dropdown-content a {
+  	float: none;
+  	color: black;
+  	padding: 20px 30px;
+  	text-decoration: none;
+  	display: block;
+  	text-align: left;
+  	border: 10px black;
+	}
+	.dropdown-content a:hover {
+ 	 background-color: #ddd;
+	}
+	.dropdown:hover .dropdown-content {
+	  display: block;
+	}
+
+
+
+
+	<!-- login part -->
+
+	body {
+	margin:0;
+	font-family: 'roboto-regular', 'Helvetica', "Sans-serif";
+	height:100%;
+	
+	}
+	form {
+	border: 3px solid #f1f1f1;
+	}
+
+	input[type=text], input[type=password] {
+	  width: 100%;
+	 padding: 12px 20px;
+ 	 margin: 8px 0;
+ 	 display: inline-block;
+ 	 border: 1px solid #ccc;
+ 	 box-sizing: border-box;
+	}
+
+		button {
+	  background-color:  #303030;
+ 	 color: white;
+ 	 padding: 14px 20px;
+ 	 margin:  0;
+ 	 border: none;
+ 	 cursor: pointer;
+ 	 width: 100%;
+	}
+
+	button:hover {
+ 	 opacity: 0.8;
+	}
+
+	.cancelbtn {
+ 	 width: auto;
+ 	 padding: 10px 18px;
+ 	 background-color: #82C0CC;
+	}
+
+
+	img.avatar {
+ 	 width: 40%;
+	  border-radius: 50%;
+	}
+
+	.container {
+	  padding: 16px;
+	}
+
+	span.psw {
+	  float: right;
+	  padding-top: 16px;
+	}
+
+
+	@media screen and (max-width: 300px) {
+  	span.psw {
+    	 display: block;
+  	   float: none;
+  	}
+  .cancelbtn {
+     width: 100%;
+  }
+}
+		
+<!--end of login part-->
+.footer{
+	margin: 50px 0px 0px 0px;
+	background-color:#489FB5;
+	padding:40px;
+	color:white;
+	font-size:15px;
+	font-family='Verdana', Sans-serif;
+}
+.footer-row{
+	display:flex;
+	flex-wrap: wrap;
+}
+.footer-column{
+	width:200px;
+	padding:10px 50px 0px 0px;
+	
+}
+.footer-header{
+	color:#ffbf66;
+	font-size:18px;
+	font-weight:bold;
+}.footer-list{
+	list-style-type:none;
+	width: 200px;
+	padding: 0px;
+}.footer-list a{
+	text-decoration:none;
+}
+.footer-list li{
+	color:white;
+	text-decoration:none;
+	padding:5px;
+}
+.footer-list li:hover{
+	background-color:#16697a;
+}
+
+
+	</style>
+
+
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+	
+	</head>
+
+	<body>
+<div class="header">
+	<img id = "company-logo" src="logo.png">
+	<div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		
+		<button class="dropbtn"> Aisles </button>
+		<div class="dropdown-content">
+			<a  href="#">Fruits and Vegetables</a>
+			<a href="#">Meat and Poultry</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="#">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	
+	<a href="#">Contact Us</a>
+	<div>
+	
+	<a  target="_blank" href="#" style="float:right;">Sign up</a>
+	
+		
+	
+	</div>
+</div>
+		</br>
+		<h1 style="text-align: center;">Login</h1>
+		</br>
+
+<form action="/action_page.php" method="post">
+ 
+
+  <div class="container">
+    </br>
+	<label for="uname"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="uname" required>
+	
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+        
+    <button type="submit">Submit</button>
+    
+  </div>
+
+  <div class="container" style="background-color:white">
+    <button type="button" class="cancelbtn" style="background-color:#303030;">Cancel</button>
+    <span class="psw"><a href="#">Forgot your password?</a></span>
+  </div>
+</form>
+
+
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="index.html"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Fruits and Vegetables</li></a>
+				<a href="index.html"><li>Meat and Poultry</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		
+	<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Log in</li></a>
+				<a href="#"><li>Sign up</li></a>
+				<a href="cart.html"><li>Shopping cart</li></a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+
+
+			</body>
+</html>
+
+
