@@ -1,0 +1,232 @@
+<head>
+	<title>Shopping Cart</title>
+	<link rel="icon" type="image/png" href="favicon-16x16.png" size="16x16">
+	<link rel = "stylesheet" type = "text/css" href = "aislestyle.css"/>
+</head>
+	<style>
+table, th, td {
+  border: 2px double gray;
+  text-align: left;
+}
+input.largerCheckbox { 
+        width: 40px; 
+        height: 40px; 
+    }
+.pagecontent{
+	margin-left: 100px;
+}
+
+#singleProductImage img {
+  height: 100px;
+  border-color: LightGray;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+}
+.itemGrid{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  margin: 10px;
+}
+.center {
+  display:block;
+  padding: 30px 0;
+}
+.centerimage {
+  display:block;
+  padding: 0 10px;
+}
+p {
+  font-size: 1.5	em;
+}
+#itemNumber{
+  text-align:center;
+  font-size:20px;
+}
+input[type=number]{
+    width: 80px;
+} 
+.centerText{
+   text-align: center;
+}
+
+</style>
+	<body onload="check()">
+	<!-- Webpage Header part -->
+<img id = "company-logo" src="logo.png">
+
+<div id="company-name">FRESHMART
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn active">Aisles
+		</button>
+		<!-- You should change the active part and the href link -->
+		<div class="dropdown-content">
+			<a href="fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="#">Meat and Seafood</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="#">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<a href="#" style="float:right;">Log In</a>
+	<a href="#" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="#" style="float: right;">
+		<img src="cart.png">
+	</a>
+</div>
+
+<div class="pagecontent">
+		<h1>Shopping Cart</h1>
+		<button onclick="checkall()">Select/Deselect all items</button>
+		<br><br><br><br>
+
+		<table width="1000">
+				<tr>
+					<th>Product</th>
+					<th>Quantity</th>
+					<th>Price</th>
+				</tr>
+				<tr>
+				<th>
+					<div class = "itemGrid">
+					<div class="center">
+					<input type="checkbox"class="largerCheckbox" id="colacheck"onclick="check()">
+					</div>
+						<div class="centerimage"id="singleProductImage">
+						<img src="cola.png" alt="item1"height="100px">
+					</div>
+							<p style="padding:15px">Cola 335mL</p>
+					</div>
+						</th>
+						<th class="centerText">
+							<input type="number" value=1 id="itemNumber" name="colaquantity"size="100">
+						</th>
+						<th class="centerText">
+							<p>1.99$</p>
+						</th>
+					</tr>
+				<tr>
+							<th>
+					<div class = "itemGrid">
+					<div class="center">
+					<input type="checkbox"class="largerCheckbox" id="beercheck"onclick="check()">
+					</div>
+						<div class="centerimage"id="singleProductImage">
+						<img src="beer.png" alt="item2"height="100px">
+					</div>
+							<p style="padding:15px">Big Beer 500mL</p>
+					</div>
+						</th>
+						<th class="centerText">
+							<input type="number" value=1 id="itemNumber" name="beerquantity"size="100">
+						</th>
+						<th class="centerText">
+							<p>3.99$</p>
+						</th>
+								</tr>
+				<tr>
+										<th>
+					<div class = "itemGrid">
+					<div class="center">
+					<input type="checkbox"class="largerCheckbox" id="watercheck"onclick="check()">
+					</div>
+						<div class="centerimage"id="singleProductImage">
+						<img src="water.png" alt="item3"height="100px">
+					</div>
+							<p style="padding:15px">Water 500mL</p>
+					</div>
+						</th>
+						<th class="centerText">
+							<input type="number" value=1 id="itemNumber" name="waterquantity"size="100">
+						</th>
+						<th class="centerText">
+							<p>0.99$</p>
+						</th>
+											</tr>
+		</table>
+		
+<h2 id="total">Subtotal: 0.00$</h2>
+<h2 id="tax">Total: 0.00$</h2>
+</div>
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="#"><li>Meat and Seafood</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Account Information</li></a>
+				<a href="#"><li>Shopping cart</li></a>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="copyright">Copyright © 2021 Freshmart</div>
+<!--End of footer part-->
+
+
+<script>
+    function check() {
+    var colacheckbox = document.getElementById("colacheck");
+    var beercheckbox = document.getElementById("beercheck");
+    var watercheckbox = document.getElementById("watercheck");
+    var totalcost=0;
+    if (colacheckbox.checked == true){
+    totalcost=totalcost+1.99;
+  }
+  if (beercheckbox.checked == true){
+    totalcost=totalcost+3.99;
+  }
+  if (watercheckbox.checked == true){
+    totalcost=totalcost+0.99;
+  }
+  totalcost=Math.floor(totalcost* 100) / 100;
+  document.getElementById("total").innerHTML = "Subtotal: "+totalcost + "$";
+  var plustax=totalcost*1.15;
+  plustax=Math.floor(plustax* 100) / 100;
+  document.getElementById("tax").innerHTML = "Total: "+plustax + "$";
+}
+    function checkall(){
+        var iscola= document.getElementById("colacheck").checked;
+        var isbeer=document.getElementById("beercheck").checked;
+        var iswater=document.getElementById("watercheck").checked;
+        if (iscola==false && isbeer==false && iswater==false) {
+            document.getElementById("colacheck").checked = true;
+            document.getElementById("beercheck").checked = true;
+            document.getElementById("watercheck").checked = true;
+        } else {
+            document.getElementById("colacheck").checked = false;
+            document.getElementById("beercheck").checked = false;
+            document.getElementById("watercheck").checked = false;
+        }
+        check();
+    }
+</script>
+																	</body>
