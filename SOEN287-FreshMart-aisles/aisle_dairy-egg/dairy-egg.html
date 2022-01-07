@@ -1,0 +1,130 @@
+<!--
+I'll mark all the places to modify with a *. 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="Author" content="Kevin Chan 40176896">
+<link rel="stylesheet" href = "css/style.css">
+<!--This is for the little icon in the browser tab, you can download it in my folder-->
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+<!-- * Make sure to change the title of the aisle. Just replace "Fruits & Vegetables | Freshmart" with your aile name, for example "Meat & Poultry | Freshmart"
+-->	
+<title>Fruits & Vegetables | Freshmart</title>
+</head>
+
+<body>
+
+<div class="header">
+	<img id = "company-logo" src="images/logo.png">
+	<div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn active">Aisles
+		</button>
+		<div class="dropdown-content">
+			<!-- * Move the "active" class to the appropriate aisle. This will change which one is highlighted.
+			-->
+			<a class="active" href="#">Fruits and Vegetables</a>
+			<a href="#">Meat and Poultry</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="#">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<div>
+	<a href="#" style="float:right;">Log In</a>
+	<a href="#" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="cart.html" style="float: right;">
+		<img src="images/cart.png">
+	</a>
+	</div>
+</div>
+<!-- * Change the header to the name of your aisle.
+-->
+<div id="aisle-header">
+	DAIRY AND EGGS
+</div>
+	
+<!--	Since the grid uses flex, the page will automatically adjust even if you add or remove boxes.
+	The following three boxes are examples on what details to put in.
+-->
+	
+<div class="grid">
+<!-- * One "box" represents one product. Simply copy and paste a new "box" to add a new product. 
+	The href should link to the corresponding P3.
+-->			
+<a class="box" href="description_milk.html">
+	<div class="product-img">
+		<img src="images/milk.jpg" alt="milk picture">
+	</div>
+	<div class="textbox">
+		<div class="product-text">
+			<div class="product-name">Milk(2%) 2L</div>
+			<div class="small-text">2 Litre container of 2% Milk</div>
+			<div>$3.79</div>
+		</div>
+	</div>
+</a>
+	
+<a class="box" href="description_egg.html">
+	<div class="product-img">
+		<img src="images/egg.jpg" alt="egg picture">
+	</div>
+	<div class="textbox">
+		<div class="product-text">	
+			<div class="product-name">Egg(x6)</div>	
+			<div class="small-text">box of 6 eggs</div>
+			<div>$1.99</div>
+		</div>
+	</div>
+</a>
+
+</div>
+
+<!--
+	No other modifications needed from here.
+-->	
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="index.html"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="aisles/fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="#"><li>Meat and Seafood</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Log in</li></a>
+				<a href="#"><li>Sign up</li></a>
+				<a href="cart.html"><li>Shopping cart</li></a>
+
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+
+</body>
+</html>
