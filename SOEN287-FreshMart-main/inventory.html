@@ -1,0 +1,137 @@
+<!--
+
+Places to modify will be marked with a *
+
+-->
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <!--
+  * Title to be modifed
+  -->
+  <title>Inventory Admin</title>
+  <link rel="stylesheet" href="backend-style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+  <img id="company-logo" src="images/logo.png">
+  <div id="company-name">FRESHMART</div>
+</div>
+ <!--
+    Same topnav style as the front end.
+  * Active class to be moved
+  -->
+ 
+<div class="topnav">
+	<a href="inventory.html"  class="active"><img class="icon" src="images/inventory.png" alt="inventory icon">Inventory</a>
+	<a href="orders.html"><img class="icon" src="images/orders.png" alt="order icon">Orders</a>
+	<a href="customers.html"><img class="icon" src="images/customer.png" alt="customer icon">Customers</a>
+</div>
+
+
+<div class="center-box">
+	<div class="edit-delete" >
+		<button class="header-button">Add New Item</button>
+		<button class="header-button">Delete Selected Items</button>
+	</div>
+	
+	<table class="list">
+   <!--
+  * Change the headers accrodingly. Remove or add new columns
+  -->
+		<tr>
+			<td class="headers">Serial #</td>
+			<td class="headers">Description</td>
+			<td class="headers">Price</td>
+			<td class="headers">Quantity in Stock</td>
+			<td class="headers">Edit</td>
+			<td class="headers">Select</td>
+
+		</tr>
+ <!--
+  * Remove or add new cells. Alternate between odd and even.
+  -->
+		<tr class="odd">
+			<td class="cell">000001</td>
+			<td class="cell">Red Cluster Tomatoes</td>
+			<td class="cell"> $3.99/kg </td>
+			<td class="cell"> 50kg </td>
+			<!--
+	 		 * Change the edit href direcory.
+  			-->
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell"> 000002</td>
+			<td class="cell"> product</td>
+			<td class="cell"> price per kg</td>
+			<td class="cell"> quantity</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">000003</td>
+			<td class="cell"> product</td>
+			<td class="cell"> price per kg</td>
+			<td class="cell"> quantity</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="even">
+			<td class="cell"> 000004</td>
+			<td class="cell"> product</td>
+			<td class="cell"> price per kg</td>
+			<td class="cell"> quantity</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">000005</td>
+			<td class="cell"> product</td>
+			<td class="cell"> price per kg</td>
+			<td class="cell"> quantity</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="even">
+			<td class="cell"> 000006</td>
+			<td class="cell"> product</td>
+			<td class="cell"> price per kg</td>
+			<td class="cell"> quantity</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">000007</td>
+			<td class="cell"> product</td>
+			<td class="cell"> price per kg</td>
+			<td class="cell"> quantity</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+
+	</table>
+	
+
+</div>
+
+</body>
+
+
+</html>
