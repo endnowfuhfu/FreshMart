@@ -1,0 +1,184 @@
+body {
+  font-family: 'roboto-regular', 'Helvetica', "Sans-serif";
+  height: 100%;
+  width: 100%;
+  background-color: #f6f6f6;
+  margin: 0;
+}
+
+.icon {
+  height: 18px;
+  width: 18px;
+}
+
+.row {
+  width: 100%;
+}
+
+.row:hover {
+  background-color: #DCDCDC;
+}
+
+.menu-options {
+  border-spacing: 30px 50px;
+  padding-top: 20px;
+  width: 100%;
+  border-bottom: 2px dotted black;
+  border-top: 2px dotted black;
+  margin-top: 29px;
+}
+
+.cell {
+  border-collapse: collapse;
+  border-color: #cdd0cb;
+  border-style: solid 5px;
+  border-spacing: 30px 60px;
+  height: 30px;
+  font-size: 15px;
+  text-align: center;
+  color: #5b5b5b;
+}
+
+.check {
+  color: #5b5b5b;
+  display: flex;
+  text-align: center;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.welcome {
+  border: 0 solid grey;
+  margin: 0px;
+  background-color: #1e1e1e;
+  width: 100%;
+  height: 50px;
+  color: white;
+  padding-top: 18px;
+ text-align: right;
+}
+
+.headers {
+  border-collapse: collapse;
+  background-color: #aaaaaa;
+  font-size: 20px;
+  text-align: center;
+  border-style: solid 5px;
+  border-spacing: 30px 60px;
+  height: 50px;
+  width: 1600px;
+}
+.edit{
+  color: blue;
+  text-decoration: underline;
+}
+
+.odd {
+  border-collapse: collapse;
+  border-color: grey;
+  border-style: solid 5px;
+  background-color: #bbf1fa;
+  border-spacing: 30px 60px;
+}
+
+.even {
+  border-collapse: collapse;
+  border-color: grey;
+  border-style: solid 5px;
+  background-color: #51c2d5;
+  border-spacing: 10px 15px;
+}
+
+.button {
+  background-color: #51c2d5;
+  border: 2px dotted white;
+  color: white;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  size: 5px;
+  cell-padding: 200px;
+}
+
+#edit-delete {
+  background-color: #51c2d5;
+  width: 60%;
+  border-spacing: 190px 10px;
+  ;
+}
+
+#background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: auto;
+}
+
+#right-side {
+  margin-left: 300px;
+  padding-left: 100px;
+  padding-top: 50px;
+  width: 100%;
+  padding-bottom: 20px;
+  border-left: grey solid 1px;
+  height: 100%;
+}
+
+#left-side {
+  margin-left: 50px;
+  width: 10%;
+  float: left;
+  border-spacing: 30px 80px;
+  padding-top: 20px;
+  font-size: 20px;
+  height: 100%;
+}
+
+#company-logo {
+  position: absolute;
+  height: 80px;
+  width: 75px;
+  padding: 20px;
+  background: white;
+}
+
+#product-list {
+  border-collapse: collapse;
+  border-spacing: 30px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: grey;
+  width: 60%;
+  height: 100%;
+}
+
+#company-name {
+  font-family: 'Verdana', 'Times New Roman', serif;
+  font-size: 50px;
+  font-style: italic;
+  font-weight: bold;
+  background-color: #489FB5;
+  padding: 30px 20px 30px 140px;
+  height: 60px;
+  color: white;
+  width: 100%;
+}
+
+@media(max-width:600px) {
+  #company-name {
+    font-size: 40px;
+    padding: 35px 20px 25px 140px;
+  }
+}
+
+#copyright {
+  bottom: 30px;
+  width: 100%;
+  color: white;
+  background-color: #308090;
+  padding: 20px;
+  text-align: center;
+  margin: 0;
+}
