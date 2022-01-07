@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- link the page to css stylesheet -->
+	<link rel = "stylesheet" type = "text/css" href = "aislestyle.css"/>
+	<link rel="icon" type="image/png" href="favicon-16x16.png" size="16x16">
+	<!-- title for the tab -->
+	<!-- *You should modify the tile of the item description page -->
+	<title> Cola | Beverages </title>
+</head>
+
+<body>
+
+<!-- Webpage Header part -->
+<img id = "company-logo" src="logo.png">
+
+<div id="company-name">FRESHMART
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn active">Aisles
+		</button>
+		<!-- You should change the active part and the href link -->
+		<div class="dropdown-content">
+			<a href="fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="#">Meat and Seafood</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="Bakery.html">Bakery</a>
+			<a href="#">Snacks</a>
+			<a class="active" href="beverages.html">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<a href="#" style="float:right;">Log In</a>
+	<a href="#" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="cart.html" style="float: right;">
+		<img src="cart.png">
+	</a>
+</div>
+
+<!-- ITEM description part -->
+
+<div class = "itemGrid">
+	<!--Display a image of the product on the left sector
+		*You should change the img src attribute to your own file-->
+	<div id="singleProductImage">
+		<img src="cola.png" alt="Cola image">
+	</div>
+
+	<!-- Display the description of the product
+		* Need to change the content of the name
+	 -->
+	<div id="itemDescription">
+		<!-- * please change the following attributes-->
+		<h1> Cola </h1>
+		<div id=price> $1.99 ea.</div>
+		<div id="weight"> (330 mL) </div>
+		<div id="unitPrice"> $1.99 per unit </div>
+		<br>
+		<div id="read"> 
+			<em> Refreshing cola served cold. Bring it on the go or at your home.
+			<span id="dots">...</span> <span id="more">No preservatives or artificial flavours. </span></em>
+			<button onclick="readMore()" id="myBtn"> Expand</button>
+		</div>
+		<!--stop changing right here-->
+		<br><br>
+		<label style= "font-size: 17px;"> Quantity: <br>
+			<input type="number" value=1 id="itemNumber">
+		</label>
+		<br><br>
+		<button id="addToCart" > <img src="cart.png" height="20px"> ADD </button>
+	</div>
+
+</div>
+
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Expand"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Collapse"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="#"><li>Meat and Seafood</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Account Information</li></a>
+				<a href="#"><li>Shopping cart</li></a>
+
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="copyright">Copyright © 2021 Freshmart</div>
+<!--End of footer part-->
+
+</body>
+
+
+</html>

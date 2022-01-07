@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name = "author" content = "Jiarui Li">
+	<!--
+	<base href="file:///C:/MyFiles/Yani/University/Classes/Winter%202021/SOEN%20287%20Web%20Programming/Assignments/Freshmart/">
+-->
+	<link rel = "stylesheet" type = "text/css" href = "description_style.css"/>
+	<link rel="icon" type="image/png" href="images/favicon-16x16.png" size="16x16">
+	<!-- title for the tab -->
+	<!-- *You should modify the tile of the item description page -->
+	<title> Donuts | Bakery </title>
+</head>
+
+<body>
+
+<!-- Webpage Header part -->
+<img id = "company-logo" src="images/logo.png">
+
+<div id="company-name">FRESHMART
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn active">Aisles
+		</button>
+		<!-- You should change the active part and the href link -->
+		<div class="dropdown-content">
+			<a href="fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="#">Meat and Seafood</a>
+			<a href="#">Dairy and Eggs</a>
+			<a class = "active" href="bakery.html">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<a href="#" style="float:right;">Log In</a>
+	<a href="#" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="#" style="float: right;">
+		<img src="images/cart.png">
+	</a>
+</div>
+
+<!-- ITEM description part -->
+
+<div class = "itemGrid">
+	<!--Display a image of the product on the left sector
+		*You should change the img src attribute to your own file-->
+	<div id="singleProductImage">
+		<img src="images/donut.png" alt="donut">
+	</div>
+
+	<!-- Display the description of the product
+		* Need to change the content of the name
+	 -->
+	<div id="itemDescription">
+		<!-- * please change the following attributes-->
+		<h1> Donuts </h1>
+		<div id=price> $0.99 ea. </div>
+		<div id="weight"> (50 g)</div>
+		<div id="unitPrice"> $5.19/box (1 box = 6 donuts) </div>
+		<br>
+		<div id="read"> 
+			<em>Freshly baked donuts with various
+			<span id="dots">...</span> <span id="more">flavors. We bake daily and never sell overnight products. Add to cart now! </span></em>
+			<button onclick="readMore()" id="myBtn"> Expand</button>
+		</div>
+		<!--stop changing right here-->
+		<br><br>
+		<label style= "font-size: 17px;"> Quantity: <br>
+			<input type="number" value=1 id="itemNumber">
+		</label>
+		<br><br>
+		<button id="addToCart" > <img src="images/cart.png"> ADD </button>
+	</div>
+
+</div>
+
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Expand"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Collapse"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="index.html"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="aisles/fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="#"><li>Meat and Seafood</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="aisles/bakery.html"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Log in</li></a>
+				<a href="#"><li>Sign up</li></a>
+				<a href="cart.html"><li>Shopping cart</li></a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+<!--End of footer part-->
+
+</body>
+
+
+</html>

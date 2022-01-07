@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html>
+<head>
+			
+	<link rel="icon" type="image/png" href="favicon-16x16.png" size="16x16">
+	
+	<title> Rib Steak | Description</title>
+<style>
+
+body {
+  margin: 0;
+  font-family: 'roboto-regular', 'Helvetica', "Sans-serif";
+  height:100%;
+}
+
+#company-logo{
+	position:absolute;
+	height: 80px;
+	width: 75px;
+	padding: 20px;
+	background:white;
+}
+
+#company-name{ font-family: 'Verdana','Times New Roman', serif;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #489FB5;
+	padding: 30px 20px 30px 140px;
+	height: 60px;
+	color:white;
+}
+
+@media(max-width:600px){
+	#company-name{
+		font-size:40px;
+		padding: 35px 20px 25px 140px;
+	}
+}
+
+#copyright{
+	width:100%;
+	color:white;
+	background-color:#308090;
+	padding: 20px;
+	text-align:center;
+}
+
+.topnav{
+	overflow:hidden;
+	background: #303030;
+		
+}.topnav a{
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 15px 40px;
+	font-size: 16px;
+	text-decoration: none;
+}.topnav a:hover, .dropdown:hover .dropbtn {
+	background-color:#505050;
+	color: white
+}.topnav a.cartlogo{
+	padding:0px 0px;
+	height:48px;
+}.topnav img{
+	max-height:48px;
+}.active{
+	background-color:#82C0CC !important;
+	font-weight:bold;
+	color:white !important;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}.dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  background: #303030;
+  padding: 15px 30px;
+  font-family: inherit; 
+}.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.1);
+  border: 10px;
+  z-index: 10;
+}.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 20px 30px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  border: 10px black;
+}.dropdown-content a:hover {
+  background-color: #ddd;
+}.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.footer{
+	box-sizing:border-box;
+	position:relative;
+	margin: 50px 0px 0px 0px;
+	background-color:#489FB5;
+	padding:40px;
+	color:white;
+	font-size:15px;
+	font-family:'Verdana', Sans-serif;
+	width:100%;
+}.footer-row{
+	display:flex;
+	flex-wrap: wrap;
+}.footer-column{
+	width:200px;
+	padding:10px 50px 0px 0px;
+	
+}.footer-header{
+	color:#ffbf66;
+	font-size:18px;
+	font-weight:bold;
+}.footer-list{
+	list-style-type:none;
+	width: 200px;
+	padding: 0px;
+}.footer-list a{
+	text-decoration:none;
+}.footer-list li{
+	color:white;
+	text-decoration:none;
+	padding:5px;
+}.footer-list li:hover{
+	background-color:#16697a;
+}
+
+
+/* position the image and make a border for it */
+#singleProductImage{
+  position: relative;
+/*  top: 50px;
+  left: 50px;*/
+}
+
+#singleProductImage img {
+  max-height: 300px;
+  max-width: 500px;
+  border-color: LightGray;
+  border-style: solid;
+  border-width: 2px;
+  border-radius: 25px;
+}
+
+#itemDescription {
+  position: relative;
+  width: 400px;
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: left;
+}
+
+.itemGrid{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content:left;
+  margin: 100px;
+}
+
+#price{
+  color: green;
+  display:inline-block;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+#weight{
+  display: inline-block;
+  font-family: Georgia;
+  font-size: 20px;
+}
+
+#unitPrice{
+  font-style: italic;
+  color: grey;
+  font-size: 20px;
+  font-family: Georgia;
+}
+
+#itemNumber{
+  text-align:left;
+  font-size:20px;
+  width:50px;
+}
+
+#addToCart{
+	position:relative;
+  background-color: #489FB5; /* Green */
+  color: white;
+  font-family: Georgia;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 50px;
+  padding-right:20px;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#addToCart img{
+	position:absolute;
+	max-width:50px;
+	left:0;
+	top:0;
+}
+
+#addToCart:hover{
+  background-color: #82C0CC;
+  color:white;
+}
+
+#more {display: none;}
+
+
+
+</style>
+
+</head>
+
+<body>
+
+
+<img id = "company-logo" src="logo.png">
+
+<div id="company-name">FRESHMART </div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Aisles</button>
+		
+		
+		<div class="dropdown-content">
+			<a class="active" href="#">Fruits and Vegetables</a>
+			<a href="index.html">Meat and Poultry</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="#">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<a href="#" style="float:right;">Log In</a>
+	<a href="#" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="#" style="float: right;">
+		<img src="cart.png">
+	</a>
+</div>
+
+<!-- ITEM description part -->
+
+<div class = "itemGrid">
+	<!--Display a image of the product on the left sector
+		*You should change the img src attribute to your own file-->
+	<div id="singleProductImage">
+		<img src="whole_chicken1.jpg" alt="Beef Rib Steak">
+	</div>
+
+	<!-- Display the description of the product
+		* Need to change the content of the name
+	 -->
+	<div id="itemDescription">
+		<!-- * please change the following attributes-->
+		<h1>Whole Chicken </h1>
+		<div id=price> $5.99 </div>
+		<div id="weight"> (kg)</div>
+		<span>/</span>
+		<div id=price> $2.69 </div>
+		<div id="weight"> (lb)</div>
+			
+		<div id="read"> 
+			<em>We do our best to provide you
+			<span id="dots">...</span> <span id="more">with the freshest and finest local and imported meat everyday  </span></em>
+			<button onclick="readMore()" id="myBtn"> Expand</button>
+		</div>
+		<!--stop changing right here-->
+		<br><br>
+		<label style= "font-size: 17px;"> Quantity: <br>
+			<input type="number" value=1 id="itemNumber">
+		</label>
+		<br><br>
+		<button id="addToCart" > <img src="cart.png"> ADD </button>
+	</div>
+
+</div>
+
+<script>
+function readMore() {
+  var dots = document.getElementById("dots");
+  var moreText = document.getElementById("more");
+  var btnText = document.getElementById("myBtn");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Expand"; 
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Collapse"; 
+    moreText.style.display = "inline";
+  }
+}
+</script>
+
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="index.html"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="aisles/fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="#"><li>Meat and Seafood</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Log in</li></a>
+				<a href="#"><li>Sign up</li></a>
+				<a href="cart.html"><li>Shopping cart</li></a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+<!--End of footer part-->
+
+</body>
+
+
+</html>
