@@ -1,0 +1,98 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head><meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <title>Customers | Freshmart Admin </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+  <img id="company-logo" src="images/logo.png">
+  <div id="company-name">FRESHMART</div>
+</div>
+ <!--
+    Same topnav style as the front end.
+  * Active class to be moved
+  -->
+ 
+<div class="topnav">
+	<a href="inventory.html">Inventory</a>
+	<a href="orders.html">Orders</a>
+	<a href="customers.html" class="active">Customers</a>
+</div>
+
+
+<div class="center-box">
+	<div class="edit-delete" >
+		<button class="header-button">Add New User</button>
+		<button class="header-button">Delete Selected Users</button>
+	</div>
+	
+	<table class="list">
+   <!--
+  * Change the headers accrodingly. Remove or add new columns
+  -->
+		<tr>
+			<td class="headers">User ID #</td>
+			<td class="headers">Username</td>
+			<td class="headers">Email</td>
+			<td class="headers">Address</td>
+			<td class="headers">Postal Code</td>
+			<td class="headers">Edit</td>
+			<td class="headers">Select</td>
+
+		</tr>
+ <!--
+  * Remove or add new cells. Alternate between odd and even.
+  -->
+		<tr class="odd">
+			<td class="cell">U - 000001</td>
+			<td class="cell"> Ray </td>
+			<td class="cell"> rayleonard726@gmail.com </td>
+			<td class="cell"> 305 Marion Pugh Dr </td>
+			<td class="cell"> H7N 4X6 </td>
+			<!--
+	 		 * Change the edit href direcory.
+  			-->
+			<td class="cell"><a href="customers-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">U - 000002</td>
+			<td class="cell">noName3</td>
+			<td class="cell"> 1010442661@qq.com </td>
+			<td class="cell"> 210 Ambsary Ave </td>
+			<td class="cell"> H4B 4F3 </td>
+			<td class="cell"><a href="customers-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		<tr class="odd">
+			<td class="cell">U - 000003</td>
+			<td class="cell"> John05</td>
+			<td class="cell"> 123@gmail.com</td>
+			<td class="cell"> 247 Fresh Ave </td>
+			<td class="cell"> H3X 4B5 </td>
+			<td class="cell"><a href="customers-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		
+		
+		
+
+	</table>
+	
+
+</div>
+
+</body>
+
+
+</html>

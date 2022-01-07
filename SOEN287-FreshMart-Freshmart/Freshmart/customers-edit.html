@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+	<html lang="en">
+
+	<head><meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+	  <meta charset="utf-8">
+	  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+	  <title>Edit User | Freshmart Admin </title>
+	  <link rel="stylesheet" href="style.css">
+
+	</head>
+
+	<body>
+
+	<div class="header">
+	  <img id="company-logo" src="images/logo.png">
+	  <div id="company-name">FRESHMART</div>
+	</div>
+	 <!--
+	    Same topnav style as the front end.
+	  * Active class to be moved
+	  -->
+	 
+	<div class="topnav">
+		<a href="inventory.html">Inventory</a>
+		<a href="orders.html">Orders</a>
+		<a href="customers.html" class="active">Customers</a>
+	</div>
+
+
+
+	<form action="/action_page.php" style="border:1px solid #ccc">
+		  <div class="container">
+		    
+			<h1 style="text-align: center;">Profile User #U-000001</h1>
+		    <hr>
+			<label for="username"><b>Username</b></label>
+		    <input type="text" value = "noName3" placeholder="Edit Username" name="username" required>
+		    <hr>
+	        <label for="email"><b>Email Address</b></label>
+		    <input type="text" value = "123@gmail.com" placeholder="Edit Email" name="email" required>
+		    <hr>    
+		    <label for="psw"><b>Password</b></label>
+		    <input type="text" value = "Kevin Chan" placeholder="Edit Password" name="psw" required>
+	        <hr>   
+		    <label for="address"><b>Address</b></label>
+		    <input type="text" value = "1241 Big Rock Cove Ave." placeholder="Edit Address" name="address" required>
+		    <hr> 
+		    <label for="postal_code"><b>Postal Code</b></label>
+		    <input type="text" value = "S3N 2N6" placeholder="Edit Postal Code" name="postalcode" required>
+		    <hr>      
+		   
+
+		    <div class="clearfix">
+		      <button type="submit" class="savebtn">Save</button>
+		    </div>
+		  	</div>
+			</form>
+
+
+	</body>
+
+
+	</html>

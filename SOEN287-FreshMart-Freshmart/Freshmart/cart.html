@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=0.72,maximum-scale=0.72,user-scalable=no"/>
+	<meta charset="utf-8">
+	<title>Cart | Freshmart</title>
+	<script src="scripts/cart-script.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+<img id = "company-logo" src="images/logo.png">
+<link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+<div id="company-name">FRESHMART
+</div>
+
+<div class="topnav">
+	<a href="index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn">Aisles
+		</button>
+		<div class="dropdown-content">
+			<a  href="aisles/fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="aisles/meat-and-poultry.html">Meat and Poultry</a>
+			<a href="aisles/dairy-and-egg.html">Dairy and Eggs</a>
+			<a href="aisles/bakery.html">Bakery</a>
+			<a href="aisles/snacks.html">Snacks</a>
+			<a href="aisles/beverages.html">Beverages</a>
+		</div>
+	</div>
+	<a href="contact.html">Contact Us</a>
+	<a href="login.html" style="float:right;">Log In</a>
+	<a href="signup.html" style="float:right;">Sign up</a>
+	<a class="cartlogo active" href="cart.html" style="float: right;">
+		<img src="images/cart.png">
+	</a>
+</div>
+
+
+<!--
+<div class="buttonscart">
+<button class ="buttoncart" onclick="checkall()">Select/Deselect all items</button>
+</div>
+-->
+<div class="grid">
+<div class="titlecart">
+<h1>Shopping Cart</h1>
+</div>
+	<table class ="cartcontent" style="max-width:600px">
+		<tr>
+			<th class="cart-header">Product</th>
+			<th class="cart-header">Quantity</th>
+			<th class="cart-header">Price</th>
+			<th class="cart-header">Type</th>
+		</tr>
+		<tr id="row1">
+			<th>
+				<div class = "itemGridCart">
+					<div class="centerimagecart"id="singleProductImageCart">
+						<img src="images/juice.jpg" alt="item1">
+					</div>
+					<p style="padding:15px">Orange Juice 1L</p>
+				</div>
+			</th>
+			<th class="centerTextcart">
+				<div class="quantitybtn">
+					<button class="addbtn" onclick="add(1)">+</button>
+						<div class="quantity" id = "row1quantity">0</div>
+					<button class="subbtn" onclick="sub(1)">-</button>
+				</div>
+				<p><button class="cart-delete" onclick="delete_row('1')">Delete</button></p>
+			</th>
+			<th class="cart-price">
+				<p id="row1price">$1.99</p>
+			</th>
+			<th>
+				<select name="juice_type">
+				<option> Pulp free</option>
+				<option> With pulp </option>
+				</select>
+			</th>
+		</tr>
+		<tr id="row2">
+			<th>
+			<div class = "itemGridCart">
+				<div class="centerimagecart"id="singleProductImageCart">
+				<img src="images/beer.jpg" alt="item2">
+			</div>
+					<p style="padding:15px">Beer 500mL</p>
+			</div>
+				</th>
+				<th class="centerTextcart">
+					<div class="quantitybtn">
+					<button class="addbtn" onclick="add(2)">+</button>
+						<div class="quantity" id="row2quantity">0</div>
+					<button class="subbtn" onclick="sub(2)">-</button>
+				</div>
+				<p><button class="cart-delete" onclick="delete_row('2')">Delete</button></p>
+				</th>
+				<th class="cart-price">
+					<p id="row2price">$3.99</p>
+				</th>
+				<th>--
+			
+			</th>
+		</tr>
+		<tr id="row3">
+			<th>
+				<div class = "itemGridCart">
+					<div class="centerimagecart"id="singleProductImageCart">
+						<img src="images/bananas.jpg" alt="item3">
+					</div>
+					<p style="padding:15px">Bananas 600g</p>
+				</div>
+			</th>
+			<th class="centerTextcart">
+				<div class="quantitybtn">
+					<button class="addbtn" onclick="add(3)">+</button>
+						<div class="quantity" id="row3quantity">0</div>
+					<button class="subbtn" onclick="sub(3)">-</button>
+				</div>
+				<p><button class="cart-delete" onclick="delete_row('3')">Delete</button></p>
+			</th>
+			<th class="cart-price">
+				<p id="row3price">$1.25</p>
+			</th>
+			<th>
+				<select name="banana_type">
+				<option> Yellow</option>
+				<option> Green </option>
+				</select>
+			</th>
+		</tr>
+	</table>
+	<table class = "cartcontent" style="max-width:350px">
+
+		<tr>
+				<th width="200"><h2>Order Summary</h2></th>
+				<th width="150" id="itemnb"><h2>0 Items</h2></th>
+		</tr>
+		<tr>
+			<th>_____________________</th>
+			<th>________</th>
+		</tr>
+		<tr>
+				<th width="100">Subtotal:</th>
+				<th width="200"id="total">0.0$</th>
+				<th height="30"></th>
+		</tr>
+		
+		<tr>
+				<th width="100">QST:</th>
+				<th width="200" id="qst">0.0$</th>
+				<th height="30"></th>
+		</tr>
+		<tr>
+				<th width="100">GST:</th>
+				<th width="200" id="gst">0.0$</th>
+		</tr>
+		<tr>
+			<th>_____________________</th>
+			<th>________</th>
+		</tr>
+		<tr>
+				<th>Total:</th>
+				<th id="tax">0.0$</th>
+				<th height="30"></th>
+		</tr>
+		</table>
+	
+</div>
+
+
+<div class="buttonscart">
+	<button onclick="alert('Order Submitted.');">Submit</button>
+</div><br>
+<div class="buttonscart">
+	<button onclick="goback();">Continue Shopping</button>
+</div>
+
+
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="index.html"><li>Homepage</li></a>
+				<a href="contact.html"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="aisles/fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="aisles/meat-and-poultry.html"><li>Meat and Poultry</li></a>
+				<a href="aisles/dairy-and-egg.html"><li>Dairy and Eggs</li></a>
+				<a href="aisles/bakery.html"><li>Bakery</li></a>
+				<a href="aisles/snacks.html"><li>Snacks</li></a>
+				<a href="aisles/beverages.html"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="signup.html"><li>Sign up</li></a>
+				<a href="login.html"><li>Log in</li></a>
+				<a href="cart.html"><li>Shopping cart</li></a>
+
+			</ul>
+		</div>
+	</div>
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+</div>
+<!--End of footer part-->
+
+<!--
+<script>
+    function check() {
+    var colacheckbox = document.getElementById("colacheck");
+    var beercheckbox = document.getElementById("beercheck");
+    var watercheckbox = document.getElementById("watercheck");
+    var totalcost=0;
+    if (colacheckbox.checked == true){
+    totalcost=totalcost+1.99;
+  }
+  if (beercheckbox.checked == true){
+    totalcost=totalcost+3.99;
+  }
+  if (watercheckbox.checked == true){
+    totalcost=totalcost+0.99;
+  }
+  totalcost=Math.floor(totalcost* 100) / 100;
+  document.getElementById("total").innerHTML =totalcost + "$";
+  var plustax=totalcost*1.15;
+  plustax=Math.floor(plustax* 100) / 100;
+  document.getElementById("tax").innerHTML =plustax + "$";
+}
+    function checkall(){
+        var iscola= document.getElementById("colacheck").checked;
+        var isbeer=document.getElementById("beercheck").checked;
+        var iswater=document.getElementById("watercheck").checked;
+        if (iscola==false && isbeer==false && iswater==false) {
+            document.getElementById("colacheck").checked = true;
+            document.getElementById("beercheck").checked = true;
+            document.getElementById("watercheck").checked = true;
+        } else {
+            document.getElementById("colacheck").checked = false;
+            document.getElementById("beercheck").checked = false;
+            document.getElementById("watercheck").checked = false;
+        }
+        check();
+    }
+</script>
+-->
+</html>

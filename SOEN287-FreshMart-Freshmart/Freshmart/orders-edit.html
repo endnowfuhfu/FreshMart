@@ -1,0 +1,180 @@
+
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+  <title>Edit Order | Freshmart Admin </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+  <img id="company-logo" src="images/logo.png">
+  <div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="inventory.html">Inventory</a>
+	<a href="orders.html" class="active">Orders</a>
+	<a href="customers.html">Customers</a>
+</div>
+
+
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+
+	<div class="container">
+			
+			<h1 style="text-align: center;">Order #O-000001</h1>
+			<hr>
+			<h2><b>User Profile</b></h2>
+			<label for="Name"><b>Name</b></label>
+			<input type="text" value = "Ray" placeholder="Edit Name" name="name" readonly>
+			<label for="serial"><b>Serial #</b></label>
+			<input type="text" value = "U - 000001" placeholder="Serial" name="serial" readonly>
+			<hr>
+			<h2><b>Order Summary</b></h2>
+			<label for="Name"><b>Date</b></label>
+			<input type="text" value = "Februrary 5" placeholder="Edit Name" name="name" readonly>
+		
+<div class="grid">
+	<table class ="cartcontent">
+		<tr>
+			<th class="cart-header">Product</th>
+			<th class="cart-header">Quantity</th>
+			<th class="cart-header">Price</th>
+			<th class="cart-header">Type</th>
+		</tr>
+		<tr>
+			<th>
+				<div class = "itemGridCart">
+					<div class="centerimagecart"id="singleProductImageCart">
+						<img src="images/juice.jpg" alt="item1">
+					</div>
+					<p style="padding:15px">Orange Juice 1L</p>
+				</div>
+			</th>
+			<th class="centerTextcart">
+				<input class="cartqnt" type="number" value=1 id="itemNumberCart" name="colaquantity"size="100">
+				<p><button>Delete</button></p>
+			</th>
+			<th class="cart-price">
+				<p>$1.99</p>
+			</th>
+			<th>
+				<select name="juice_type">
+				<option> Pulp free</option>
+				<option> With plup </option>
+				</select>
+			</th>
+		</tr>
+		<tr>
+			<th>
+			<div class = "itemGridCart">
+				<div class="centerimagecart"id="singleProductImageCart">
+				<img src="images/beer.jpg" alt="item2">
+			</div>
+					<p style="padding:15px">Beer 500mL</p>
+			</div>
+				</th>
+				<th class="centerTextcart">
+					<input class="cartqnt" type="number" value=1 id="itemNumberCart" name="beerquantity"size="100">
+					<p><button>Delete</button></p>
+				</th>
+				<th class="cart-price">
+					<p>$3.99</p>
+				</th>
+				<th>--
+			
+			</th>
+		</tr>
+		<tr>
+			<th>
+				<div class = "itemGridCart">
+					<div class="centerimagecart"id="singleProductImageCart">
+						<img src="images/bananas.jpg" alt="item3">
+					</div>
+					<p style="padding:15px">Bananas 600g</p>
+				</div>
+			</th>
+			<th class="centerTextcart">
+				<input class="cartqnt" type="number" value=1 id="itemNumberCart" name="waterquantity"size="100">
+				<p><button>Delete</button></p>
+			</th>
+			<th class="cart-price">
+				<p>$1.25</p>
+			</th>
+			<th>
+				<select name="banana_type">
+				<option> Yellow</option>
+				<option> Green </option>
+				</select>
+			</th>
+		</tr>
+	</table>
+	<br>
+	<br>
+	<table class = "cartcontent">
+
+		<tr>
+				<th width="200"><h2>Order Summary</h2></th>
+				<th width="150"><h2>(3 items)</h2></th>
+		</tr>
+		<tr>
+			<th>_____________________</th>
+			<th>________</th>
+		</tr>
+		<tr>
+				<th width="100">Subtotal:</th>
+				<th width="200"id="total">$7.23</th>
+				<th height="30"></th>
+		</tr>
+		
+		<tr>
+				<th width="100">QST (9.975%):</th>
+				<th width="200">$0.70</th>
+				<th height="30"></th>
+		</tr>
+		<tr>
+				<th width="100">GST (5%):</th>
+				<th width="200">$0.36</th>
+		</tr>
+		<tr>
+			<th>_____________________</th>
+			<th>________</th>
+		</tr>
+		<tr>
+				<th>Total:</th>
+				<th id="tax"> $8.29</th>
+				<th height="30"> </th>
+		</tr>
+	</table>
+</div>
+		<br>
+			<hr>
+			<h2><b>Delivery Address</b></h2>
+			<label for="address"><b>Address</b></label>
+			<input type="text" value = "3425 Summer Ave." placeholder="Edit Address" name="address" required>
+			<label for="postal"><b>Postal Code</b></label>
+			<input type="text" value = "H3X 4B5" placeholder="Edit Postal" name="postal" required>
+			<hr>    
+	   
+
+		<div class="clearfix">
+		    <button type="submit" class="savebtn">Save</button>
+		 </div>
+		
+	</div>
+</form>
+
+
+</body>
+
+
+</html>

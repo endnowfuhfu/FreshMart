@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+	<meta charset="utf-8">
+<link rel="stylesheet" href = "../style.css">
+<!--This is for the little icon in the browser tab, you can download it in my folder-->
+<link rel="icon" type="image/png" href="../images/favicon-16x16.png" sizes="16x16" />
+<!-- * Make sure to change the title of the aisle. Just replace "Fruits & Vegetables | Freshmart" with your aile name, for example "Meat & Poultry | Freshmart"
+-->	
+<title>Snacks | Freshmart</title>
+</head>
+
+<body>
+
+<div class="header">
+	<img id = "company-logo" src="../images/logo.png">
+	<div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="../index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn active">Aisles
+		</button>
+		<div class="dropdown-content">
+			<!-- * Move the "active" class to the appropriate aisle. This will change which one is highlighted.
+			-->
+			<a  href="fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="meat-and-poultry.html">Meat and Poultry</a>
+			<a href="dairy-and-egg.html">Dairy and Eggs</a>
+			<a href="bakery.html">Bakery</a>
+			<a class="active" href="snacks.html">Snacks</a>
+			<a href="beverages.html">Beverages</a>
+		</div>
+	</div>
+	<a href="../contact.html">Contact Us</a>
+	<div>
+	<a href="../login.html" style="float:right;">Log In</a>
+	<a href="../signup.html" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="../cart.html" style="float: right;">
+		<img src="../images/cart.png">
+	</a>
+	</div>
+</div>
+<!-- * Change the header to the name of your aisle.
+-->
+<div id="aisle-header">
+	SNACKS
+</div>
+	
+<!--	Since the grid uses flex, the page will automatically adjust even if you add or remove boxes.
+	The following three boxes are examples on what details to put in.
+-->
+	
+<div class="grid">
+<!-- * One "box" represents one product. Simply copy and paste a new "box" to add a new product. 
+	The href should link to the corresponding P3.
+-->		
+	
+<a class="box" href="products/popcorn.html">
+	<div class="product-img">
+		<img src="../images/popcorn.jpg" alt="popcorn">
+	</div>
+	<div class="textbox">
+		<div class="product-text">
+			<div class="product-name">Butter Popcorn</div>
+			<div class="small-text">150g</div>
+			<div>$2.79</div>
+		</div>
+	</div>
+</a>
+	
+<a class="box" href="products/chocolate.html">
+	<div class="product-img">
+		<img src="../images/chocolate.jpg" alt="chocolate">
+	</div>
+	<div class="textbox">
+		<div class="product-text">	
+			<div class="product-name">Nut Chocolate</div>
+			<div class = "small-text">80g</div>
+			<div>$2.19</div>
+		</div>
+	</div>
+</a>
+
+</div>
+
+<!--
+	No other modifications needed from here.
+-->	
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="../index.html"><li>Homepage</li></a>
+				<a href="../contact.html"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+				<a href="meat-and-poultry.html"><li>Meat and Poultry</li></a>
+				<a href="dairy-and-egg.html"><li>Dairy and Eggs</li></a>
+				<a href="bakery.html"><li>Bakery</li></a>
+				<a href="snacks.html"><li>Snacks</li></a>
+				<a href="beverages.html"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="../login.html"><li>Log in</li></a>
+				<a href="../signup.html"><li>Sign up</li></a>
+				<a href="../cart.html"><li>Shopping cart</li></a>
+			</ul>
+		</div>
+	</div>
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+</div>
+
+</body>
+</html>

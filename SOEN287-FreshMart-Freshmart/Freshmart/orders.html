@@ -1,0 +1,88 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head><meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <title>Orders | Freshmart Admin </title>
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="header">
+  <img id="company-logo" src="images/logo.png">
+  <div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="inventory.html">Inventory</a>
+	<a href="orders.html" class="active">Orders</a>
+	<a href="customers.html">Customers</a>
+</div>
+
+
+<div class="center-box">
+	<div class="edit-delete" >
+		<button class="header-button">Add New Item</button>
+		<button class="header-button">Delete Selected Items</button>
+	</div>
+	
+	<table class="list">
+
+		<tr>
+			<td class="headers">Serial #</td>
+			<td class="headers">Date</td>
+			<td class="headers">Customer</td>
+			<td class="headers">Total Value</td>
+			<td class="headers">Postal Code</td>
+			<td class="headers">Status</td>
+			<td class="headers">Edit</td>
+			<td class="headers">Select</td>
+
+		</tr>
+
+		<tr class="odd">
+			<td class="cell">O - 000001</td>
+			<td class="cell">Februrary 5</td>
+			<td class="cell">Ray</td>
+			<td class="cell"> $8.29</td>
+			<td class="cell"> H7N 4X6</td>
+			<td class="cell"> Completed </td>
+			<td class="cell"><a href="orders-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">O - 000002</td>
+			<td class="cell">Februrary 15</td>
+			<td class="cell"> noName3 </td>
+			<td class="cell"> $110.32</td>
+			<td class="cell"> H4B 4F3</td>
+			<td class="cell"> Shipping </td>
+			<td class="cell"><a href="orders-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>		
+		<tr class="odd">
+			<td class="cell">O - 000003</td>
+			<td class="cell">Februrary 20</td>
+			<td class="cell"> John05 </td>
+			<td class="cell"> $5.65</td>
+			<td class="cell"> H3X 4B5</td>
+			<td class="cell"> Processing Order</td>
+			<td class="cell"><a href="orders-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+
+	</table>
+	
+
+</div>
+
+</body>
+
+
+</html>

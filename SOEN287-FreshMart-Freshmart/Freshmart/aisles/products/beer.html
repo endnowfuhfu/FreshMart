@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+	<meta charset="utf-8">
+	<!-- link the page to css stylesheet -->
+	<link rel = "stylesheet" type = "text/css" href = "../../style.css"/>
+	<script src = "../../scripts/description-script.js"></script>
+	<link rel="icon" type="image/png" href="../../images/favicon-16x16.png" size="16x16">
+	<!-- title for the tab -->
+	<!-- *You should modify the tile of the item description page -->
+	<title> Beer | Freshmart </title>
+</head>
+
+<body>
+
+<!-- Webpage Header part -->
+<img id = "company-logo" src="../../images/logo.png">
+
+<div id="company-name">FRESHMART
+</div>
+
+<div class="topnav">
+	<a href="../../index.html">Home</a>
+	<div class="dropdown">
+		<button class="dropbtn active">Aisles
+		</button>
+		<div class="dropdown-content">
+			<!-- * Move the "active" class to the appropriate aisle. This will change which one is highlighted.
+			-->
+			<a href="../fruits-vegetables.html">Fruits and Vegetables</a>
+			<a href="../meat-and-poultry.html">Meat and Poultry</a>
+			<a href="../dairy-and-egg.html">Dairy and Eggs</a>
+			<a href="../bakery.html">Bakery</a>
+			<a href="../snacks.html">Snacks</a>
+			<a class="active" href="../beverages.html">Beverages</a>
+		</div>
+	</div>
+	<a href="../../contact.html">Contact Us</a>
+	<div>
+	<a href="../../login.html" style="float:right;">Log In</a>
+	<a href="../../signup.html" style="float:right;">Sign up</a>
+	<a class="cartlogo" href="../../cart.html" style="float: right;">
+		<img src="../../images/cart.png">
+	</a>
+	</div>
+</div>
+
+<!-- ITEM description part -->
+
+<div class = "itemGrid">
+	<!--Display a image of the product on the left sector
+		*You should change the img src attribute to your own file-->
+	<div id="singleProductImage">
+		<img src="../../images/beer.jpg" alt="Beer image">
+	</div>
+
+	<!-- Display the description of the product
+		* Need to change the content of the name
+	 -->
+	<div id="itemDescription">
+		<!-- * please change the following attributes-->
+		<h1 id="ckname"> Beer </h1>
+		<div id=price> $3.99</div>
+		<div id="weight"> (500mL) </div>
+		<br>
+		<div id="read"> 
+			<em> Refreshing beer served cold. Bring it on the go or at your home.
+			<span id="dots">...</span> <span id="more">No preservatives or artificial flavours. </span></em>
+			<button onclick="readMore()" id="myBtn"> Expand</button>
+		</div>
+		<!--stop changing right here-->
+			<br><br>
+		<div style= "font-size: 17px;"> Quantity:
+		<br><br>
+			<div class="quantitybtn">
+				<button id="addbtn" onclick="add()">+</button>
+				<div id="quantity"></div>
+				<button id="subbtn" onclick="sub()">-</button>
+			</div>
+		</div>
+		<br>
+		<div>
+			<div style="position:absolute;">Subtotal: </div>
+			<div style="position:absolute; left: 90px; color: green; font-weight: bold;"id="subtotal">$1.25</div>
+		</div>
+		<br><br>
+		<button id="addToCart" > <img src="../../images/cart.png"> ADD </button>
+	</div>
+
+</div>
+
+
+<!--Footer Part-->
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="../../index.html"><li>Homepage</li></a>
+				<a href="../../contact.html"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+			<a href="../fruits-vegetables.html"><li>Fruits and Vegetables</li></a>
+			<a href="../meat-and-poultry.html"><li>Meat and Poultry</li></a>
+			<a href="../dairy-and-egg.html"><li>Dairy and Eggs</li></a>
+			<a href="../bakery.html"><li>Bakery</li></a>
+			<a href="../snacks.html"><li>Snacks</li></a>
+			<a href="../beverages.html"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="../../login.html"><li>Log in</li></a>
+				<a href="../../signup.html"><li>Sign up</li></a>
+				<a href="../../cart.html"><li>Shopping cart</li></a>
+			</ul>
+		</div>
+	</div>
+
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+</div>
+<!--End of footer part-->
+
+</body>
+
+
+</html>

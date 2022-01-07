@@ -1,0 +1,154 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head><meta name="viewport" content="width=device-width,initial-scale=0.8,maximum-scale=0.8,user-scalable=no"/>
+  <meta charset="utf-8">
+  <link rel="icon" type="image/png" href="images/favicon-16x16.png" sizes="16x16" />
+  <title>Inventory | Freshmart Admin </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="scripts/inventory.js"></script>
+</head>
+
+<body>
+
+<div class="header">
+  <img id="company-logo" src="images/logo.png">
+  <div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="inventory.html"class="active">Inventory</a>
+	<a href="orders.html" >Orders</a>
+	<a href="customers.html">Customers</a>
+	
+</div>
+
+
+<div class="center-box">
+	<div class="edit-delete" >
+		<button class="header-button" onclick="productEdit('-1');">Add New Item</button>
+		<button class="header-button">Delete Selected Items</button>
+	</div>
+	
+	<table class="list">
+
+		<tr>
+			<td class="headers">Serial #</td>
+			<td class="headers">Description</td>
+			<td class="headers">Price</td>
+			<td class="headers">Quantity of units in stock</td>
+			<td class="headers">Edit</td>
+			<td class="headers">Select</td>
+
+		</tr>
+
+		<tr class="odd">
+			<td class="cell">P - 000001</td>
+			<td class="cell">Red Cluster Tomatoes</td>
+			<td class="cell"> $3.85 </td>
+			<td class="cell"> 50 </td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">P - 000002</td>
+			<td class="cell">Bananas</td>
+			<td class="cell"> $1.25</td>
+			<td class="cell"> 60</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="odd">
+			<td class="cell">P - 000003</td>
+			<td class="cell">Beef Rib Steak</td>
+			<td class="cell"> $2.19 </td>
+			<td class="cell"> 20 </td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">P - 000004</td>
+			<td class="cell">Whole Chicken</td>
+			<td class="cell"> $9.99</td>
+			<td class="cell"> 35</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="odd">
+			<td class="cell">P - 000005</td>
+			<td class="cell">Milk</td>
+			<td class="cell"> $3.79 </td>
+			<td class="cell"> 100 </td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">P - 000006</td>
+			<td class="cell">Eggs (x6)</td>
+			<td class="cell"> $1.99</td>
+			<td class="cell"> 100</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="odd">
+			<td class="cell">P - 000007</td>
+			<td class="cell">Donuts (x6)</td>
+			<td class="cell"> $5.19</td>
+			<td class="cell"> 20 </td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+
+		<tr class="even">
+			<td class="cell">P - 000008</td>
+			<td class="cell">Sourdough bread</td>
+			<td class="cell"> $2.19</td>
+			<td class="cell"> 40</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="odd">
+			<td class="cell">P - 000009</td>
+			<td class="cell">Butter Popcorn</td>
+			<td class="cell"> $2.79</td>
+			<td class="cell"> 30 </td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="even">
+			<td class="cell">P - 000010</td>
+			<td class="cell">Nut Chocolate</td>
+			<td class="cell"> $2.19</td>
+			<td class="cell"> 30</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="odd">
+			<td class="cell">P - 000011</td>
+			<td class="cell">Orange Juice</td>
+			<td class="cell"> $1.99</td>
+			<td class="cell"> 50 </td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+		<tr class="even">
+			<td class="cell">P - 000012</td>
+			<td class="cell">Beer</td>
+			<td class="cell"> $3.99</td>
+			<td class="cell"> 50</td>
+			<td class="cell"><a href="product-edit.html">Edit</a></td>
+			<td class="cell"><input type="checkbox" class="check"></td>
+		</tr>
+	</table>
+	
+
+</div>
+
+</body>
+
+
+</html>
