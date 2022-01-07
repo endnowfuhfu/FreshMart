@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+
+	<head>	
+		<title>Sign Up</title>
+		<style>
+		
+	body {
+	  margin: 0;
+ 	 font-family: 'roboto-regular', 'Helvetica', "Sans-serif";
+ 	 height:100%;
+	    }
+
+	
+	#company-logo{
+	position:absolute;
+	height: 80px;
+	width: 75px;
+	padding: 20px;
+	background:white;
+	}
+
+	
+	#company-name{ font-family: 'Verdana','Times New Roman', serif;
+	font-size: 50px;
+	font-style: italic;
+	font-weight: bold;
+	background-color: #489FB5;
+	padding: 30px 20px 30px 140px;
+	height: 60px;
+	color:white;
+	}
+
+	@media(max-width:600px){
+	
+	#company-name {
+		font-size:40px;
+		padding: 35px 20px 25px 140px;
+	}
+		}
+
+	#copyright{
+	width:100%;
+	color:white;
+	background-color:#308090;
+	padding: 20px;
+	text-align:center;
+	}
+
+	.topnav{
+	overflow:hidden;
+	background: #303030;
+		
+	}
+
+
+	.topnav a {
+	float: left;
+	color: white;
+	text-align: center;
+	padding: 15px 40px;
+	font-size: 16px;
+	text-decoration: none;
+	}
+
+
+	.topnav a:hover, .dropdown:hover .dropbtn {
+	background-color:#505050;
+	color: white
+	}
+
+
+
+	.topnav a.cartlogo{
+	padding:0px 0px;
+	height:48px;
+		}
+		
+	.topnav img {
+	max-height:48px;
+	}
+
+	.active{
+	background-color:#82C0CC !important;
+	font-weight:bold;
+	color:white !important;
+	}
+	
+
+	.dropdown {
+  	float: left;
+  	overflow: hidden;
+	}
+
+
+	.dropdown .dropbtn {
+  	font-size: 16px;
+	  border: none;
+ 	 outline: none;
+ 	 color: white;
+  	background: #303030;
+  	padding: 15px 30px;
+  	<font-family: inherit;> 
+	}
+	.dropdown-content {
+  	display: none;
+  	position: absolute;
+  	background-color: #f9f9f9;
+  	min-width: 160px;
+  	box-shadow: 0px 10px 10px 10px rgba(0,0,0,0.1);
+  	border: 10px;
+ 	 z-index: 10;
+	}
+	.dropdown-content a {
+ 	 float: none;
+ 	 color: black;
+ 	 padding: 20px 30px;
+  	text-decoration: none;
+ 	 display: block;
+  	text-align: left;
+  	border: 10px black;
+	}
+	
+	.dropdown-content a:hover {
+  	background-color: #ddd;		
+		}
+
+
+	.dropdown:hover .dropdown-content {
+  	display: block;
+		}
+
+
+
+
+	body 
+	{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+ 	{
+	box-sizing: border-box
+	}
+
+
+input[type=text], input[type=password] {
+
+	  width: 100%;
+	  padding: 15px;
+  	  margin: 5px 0 22px 0;
+  	  display: inline-block;
+  	  border: none;	
+          background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus 
+{
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 2px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+button {
+  background-color: #303030;
+  color: white;
+  padding: 14px 20px;
+  margin:  0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #505050;
+}
+
+
+.cancelbtn, .signupbtn
+ {
+  	 
+	  width: 100%;
+}
+
+
+.container 
+{
+  padding: 16px;
+}
+
+
+.clearfix::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+@media screen and (max-width: 300px) 
+{
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+
+}
+
+.footer{
+	box-sizing:border-box;
+	position:relative;
+	margin: 50px 0px 0px 0px;
+	background-color:#489FB5;
+	padding:40px;
+	color:white;
+	font-size:15px;
+	font-family:'Verdana', Sans-serif;
+	width:100%;
+}.footer-row{
+	display:flex;
+	flex-wrap: wrap;
+}.footer-column{
+	width:200px;
+	padding:10px 50px 0px 0px;
+	
+}.footer-header{
+	color:#ffbf66;
+	font-size:18px;
+	font-weight:bold;
+}.footer-list{
+	list-style-type:none;
+	width: 200px;
+	padding: 0px;
+}.footer-list a{
+	text-decoration:none;
+}.footer-list li{
+	color:white;
+	text-decoration:none;
+	padding:5px;
+}.footer-list li:hover{
+	background-color:#16697a;
+}
+
+
+	</style>
+		<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
+		</head>
+		
+
+
+		<body>
+
+
+<body>
+
+<div class="header">
+	<img id = "company-logo" src="logo.png">
+	<div id="company-name">FRESHMART</div>
+</div>
+
+<div class="topnav">
+	<a href="#">Home</a>
+	<div class="dropdown">
+		<!-- Move the active class to the appropriate tab-->
+		<button class="dropbtn">Aisles </button>
+		<div class="dropdown-content">
+			<!-- * Move the "active" class to the appropriate aisle. This will change which one is highlighted.
+			-->
+			<a  href="#">Fruits and Vegetables</a>
+			<a class="active" href="#">Meat and Poultry</a>
+			<a href="#">Dairy and Eggs</a>
+			<a href="#">Bakery</a>
+			<a href="#">Snacks</a>
+			<a href="#">Beverages</a>
+		</div>
+	</div>
+	<a href="#">Contact Us</a>
+	<div>
+	
+	<a target="_blank" href="login.html" style="float:right;">Log In</a>
+	
+		
+	
+	</div>
+</div>
+
+
+
+
+<form action="/action_page.php" style="border:1px solid #ccc">
+  <div class="container">
+    
+	<h1 style="text-align: center;">Sign Up</h1>
+    <p><h4>Hello</h4>sign up, <b style="color: orange;">best deals</b> are waiting for you!</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b>Confirm Password</b></label>
+    <input type="password" placeholder="Confirm Password" name="psw-repeat" required>
+    
+    <label for="address"><b>Address</b></label>
+    <input type="text" placeholder="Enter Address " name="address" required>
+  
+    <label for="postal code"><b>Postal Code</b></label>
+    <input type="text" placeholder="Enter Postal code" name="postal code" required>
+    
+    <hr>    
+   
+
+    <div class="clearfix">
+    
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  	</div>
+	</form>
+
+<div class="footer">
+	<div class="footer-row">
+		<div class="footer-column">
+			<div class="footer-header">Our Website</div>
+			<ul class="footer-list"> 
+				<a href="index.html"><li>Homepage</li></a>
+				<a href="#"><li>Contact Us</li></a>
+			</ul>
+		</div>
+
+		<div class="footer-column">
+			<div class="footer-header">Aisles</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Fruits and Vegetables</li></a>
+				<a href="index.html"><li>Meat and Poultry</li></a>
+				<a href="#"><li>Dairy and Eggs</li></a>
+				<a href="#"><li>Bakery</li></a>
+				<a href="#"><li>Snacks</li></a>
+				<a href="#"><li>Beverages</li></a>
+			</ul>
+		</div>
+		<div class="footer-column">
+			<div class="footer-header">User Account</div>
+			<ul class="footer-list"> 
+				<a href="#"><li>Log in</li></a>
+				<a href="#"><li>Sign up</li></a>
+				<a href="cart.html"><li>Shopping cart</li></a>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div id="copyright">Copyright &#169 2021 Freshmart</div>
+</body>
+</html>
